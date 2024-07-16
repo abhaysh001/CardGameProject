@@ -10,6 +10,7 @@ import java.util.Arrays;
  *
  * @author Abhay
  */
+
 public class Blackjack {
 
     /**
@@ -19,10 +20,9 @@ public class Blackjack {
         ArrayList<String> playerNames = new ArrayList<>(Arrays.asList("Abhay", "Apram", "Anu", "Ridham"));
         Game game = new Game(playerNames);
         game.startGame();
-        
+
         for (Player player : game.players) {
             System.out.println(player);
-        }// TODO code application logic here
+        }
     }
-    
 }
