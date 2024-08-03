@@ -5,10 +5,7 @@
 package blackjack;
 
 import java.util.ArrayList;
-/**
- *
- * @author Abhay
- */
+
 public class Hand {
     private ArrayList<Card> cards;
 
@@ -18,10 +15,6 @@ public class Hand {
 
     public void addCard(Card card) {
         cards.add(card);
-    }
-
-    public void removeCard(Card card) {
-        cards.remove(card);
     }
 
     public ArrayList<Card> getCards() {

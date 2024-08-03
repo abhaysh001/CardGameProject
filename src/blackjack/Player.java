@@ -4,22 +4,19 @@
  */
 package blackjack;
 
-/**
- *
- * @author Abhay
- */
-
 public class Player {
     private String name;
     private Hand hand;
     private int bet;
     private int balance;
+    private int wins;
 
     public Player(String name, int balance) {
         this.name = name;
         this.hand = new Hand();
         this.balance = balance;
         this.bet = 0;
+        this.wins = 0;
     }
 
     public String getName() {
@@ -56,6 +53,18 @@ public class Player {
         if (drawnCard != null) {
             hand.addCard(drawnCard);
         }
+    }
+
+    public void clearHand() {
+        hand = new Hand();
+    }
+
+    public int getWins() {
+        return wins;
+    }
+
+    public void incrementWins() {
+        wins++;
     }
 
     @Override
